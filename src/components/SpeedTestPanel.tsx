@@ -17,6 +17,7 @@ export function SpeedTestPanel() {
   const selectedPlan = PLANS.find((p) => p.id === selectedId) ?? PLANS[0];
 
   useEffect(() => {
+    selectedIdRef.current = selectedId;
   }, [selectedId]);
 
   useEffect(() => {
@@ -39,6 +40,7 @@ export function SpeedTestPanel() {
     if (!plan) return;
 
     stopAnimation();
+    selectedIdRef.current = plan.id;
     setSelectedId(plan.id);
     setState("idle");
     setDisplaySpeed(plan.speed);
@@ -53,6 +55,7 @@ export function SpeedTestPanel() {
 
     const target = selectedPlan.speed;
     const planIdAtStart = selectedPlan.id;
+    selectedIdRef.current = planIdAtStart;
     const duration = 1600;
     const start = performance.now();
 
