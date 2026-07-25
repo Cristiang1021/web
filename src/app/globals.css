@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --cohere-black: #000000;
+  --near-black: #17171c;
+  --enterprise-green: #003c33;
+  --dark-navy: #071829;
+  --action-blue: #1863dc;
+  --coral: #ff7759;
+  --soft-coral: #ffad9b;
+  --canvas-white: #ffffff;
+  --soft-stone: #eeece7;
+  --pale-green: #edfce9;
+  --pale-blue: #f1f5ff;
+  --card-border: #f2f2f2;
+  --ink: #212121;
+  --muted-slate: #93939f;
+  --slate: #75758a;
+  --hairline: #d9d9dd;
+  --border-light: #e5e7eb;
+}
+
+@theme inline {
+  --color-cohere-black: var(--cohere-black);
+  --color-near-black: var(--near-black);
+  --color-enterprise-green: var(--enterprise-green);
+  --color-dark-navy: var(--dark-navy);
+  --color-action-blue: var(--action-blue);
+  --color-coral: var(--coral);
+  --color-soft-stone: var(--soft-stone);
+  --color-pale-green: var(--pale-green);
+  --color-ink: var(--ink);
+  --color-muted-slate: var(--muted-slate);
+  --color-hairline: var(--hairline);
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--canvas-white);
+  color: var(--ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono-label {
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  letter-spacing: 0.28px;
+}
