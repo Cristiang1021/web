@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "SpeedNet | Velocidad que conecta al futuro",
   description:
     "SpeedNet - Internet de fibra óptica para tu hogar. Planes desde $15/mes con primer mes gratis e instalación gratis. Hasta 600 Mbps.",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
 };
 
 export default function RootLayout({
